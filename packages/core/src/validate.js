@@ -16,6 +16,7 @@ function createAjvInstance() {
     schemaId: "auto",
     unknownFormats: "ignore",
     $data: true,
+    removeAdditional: true,
   });
 
   require("ajv-keywords")(ajv, ["formatMaximum", "formatMinimum"]);
